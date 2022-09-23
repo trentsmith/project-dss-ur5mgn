@@ -1,0 +1,18 @@
+<div>
+  Symptons
+  <input
+    type="text"
+    class="form-control"
+    ng-model="string"
+    (keyup)="onSymptonKeyUp($event)"
+  />
+  <br />
+  Disease
+  <input
+    type="text"
+    class="form-control"
+    ng-model="string"
+    (keyup)="onDiseaseKeyUp($event)"
+  />
+  <button (click)="onSubmit()">Submit</button>
+</div>

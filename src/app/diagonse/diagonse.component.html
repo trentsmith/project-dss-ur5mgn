@@ -1,0 +1,106 @@
+<div>
+  <div *ngIf="pics">
+    <h1>List of Symptons</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Sympton</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Bleeding</td>
+        </tr>
+        <tr>
+          <td>being awesome</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Please select the afflicted area</h1>
+    <img
+      src="../assets/arm.jpg"
+      (click)="chooseArm()"
+      title="Title of image"
+      alt="alt text here"
+    />
+    <img
+      src="../assets/hand.jpg"
+      (click)="chooseHand()"
+      title="Title of image"
+      alt="alt text here"
+    />
+    <img
+      src="../assets/foot.jpg"
+      (click)="chooseFoot()"
+      title="Title of image"
+      alt="alt text here"
+    />
+    <img
+      src="../assets/legs.jpg"
+      (click)="chooseLegs()"
+      title="Title of image"
+      alt="alt text here"
+    />
+    <img
+      src="../assets/th.jpg"
+      (click)="chooseHead()"
+      title="Title of image"
+      alt="alt text here"
+    />
+    <img
+      src="../assets/torso.jpg"
+      (click)="chooseTorso()"
+      title="Title of image"
+      alt="alt text here"
+    />
+  </div>
+  <div *ngIf="arm">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+  <div *ngIf="hand">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+  <div *ngIf="foot">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+  <div *ngIf="legs">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+  <div *ngIf="head">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+  <div *ngIf="torso">
+    <h1>Please Select the sympton</h1>
+    <button>Bleeding</button>
+    <button>Bruise</button>
+    <button>purple Bruise</button>
+    <button>Brown Bruise</button>
+    <button>Pain</button>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div>
+  <h2>Login</h2>
+  <h3>Username</h3>
+  <input
+    type="text"
+    class="form-control"
+    ng-model="string"
+    (keyup)="onUsernameKeyUp($event)"
+  />
+  <br />
+  <h3>Password</h3>
+  <input
+    type="text"
+    class="form-control"
+    ng-model="string"
+    (keyup)="onPasswordKeyUp($event)"
+  />
+  <br />
+  <button class="btn" (click)="LoginButtonEventfunc()">
+    Login
+  </button>
+</div>
