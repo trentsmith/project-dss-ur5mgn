@@ -9,11 +9,10 @@
       </thead>
 
       <tbody>
-        <tr>
-          <td>Bleeding</td>
-        </tr>
-        <tr>
-          <td>being awesome</td>
+        <tr *ngFor="let sym of SymptonArray">
+          <td scope="col">
+            {{ sym }}
+          </td>
         </tr>
       </tbody>
     </table>
