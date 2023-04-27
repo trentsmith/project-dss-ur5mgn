@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-diagonse',
   templateUrl: './diagonse.component.html',
-  styleUrls: ['./diagonse.component.css']
+  styleUrls: ['./diagonse.component.css'],
 })
 export class DiagonseComponent implements OnInit {
   constructor() {}
@@ -16,7 +16,13 @@ export class DiagonseComponent implements OnInit {
   head = false;
   torso = false;
   pics = true;
-
+  SymptonArray = [];
+  addSymptons(sym) {
+    console.log(this.SymptonArray);
+    if (this.SymptonArray.indexOf(sym) == -1) {
+      this.SymptonArray.push(sym);
+    }
+  }
   switchpics() {
     this.pics = !this.pics;
   }
